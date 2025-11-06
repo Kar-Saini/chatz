@@ -3,10 +3,20 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "test": "bun index.ts && bun client.ts && bun client2.ts"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/ws": "^8.18.1"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "aedes": "^0.51.3",
+    "mqtt": "^5.14.1",
+    "websocket-stream": "^5.5.2",
+    "ws": "^8.18.3"
   }
 }
